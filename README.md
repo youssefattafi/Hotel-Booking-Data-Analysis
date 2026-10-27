@@ -6,6 +6,20 @@ Exploratory data analysis of **119,390 hotel booking records and 32 fields** usi
 
 The executed notebook includes 91 executed code cells and saved analysis outputs. The original tutorial notebook remains available for comparison.
 
+## Interactive Streamlit dashboard
+
+An interactive dashboard is available in [streamlit_app.py](streamlit_app.py), featuring:
+
+- Hotel and arrival-year filters, market segments, and cancellation status
+- Booking count, cancellation rate, median lead time, and median ADR
+- Cancellation comparisons by hotel and lead-time bands
+- Booking channels and market segment breakdowns
+- ADR distribution, arrival-month patterns, and guest origin codes
+
+**Run locally:** `streamlit run streamlit_app.py`
+
+**Deploy on Streamlit Community Cloud:** Choose this GitHub repository, branch `main`, and main file path `streamlit_app.py`. The dashboard reads the included `hotel_bookings.csv`. A public deployment URL will be available only after successful deployment.
+
 ## Project overview
 
 This project explores hotel reservation data to understand booking activity, cancellations, customer and market segments, room assignments, guest origins, and average daily rates (ADR). The goal is to practice cleaning real-world tabular data and communicating insights through descriptive statistics and visualizations.
