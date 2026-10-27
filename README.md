@@ -19,7 +19,8 @@ This project explores hotel reservation data to understand booking activity, can
 
 | File | Description |
 |---|---|
-| [Hotel_booking_Analysis_Shan_Singh.ipynb](Hotel_booking_Analysis_Shan_Singh.ipynb) | Original exploratory analysis notebook |
+| [Hotel_booking_Analysis_Shan_Singh.ipynb](Hotel_booking_Analysis_Shan_Singh.ipynb) | Original exploratory analysis notebook (preserved) |
+| [Hotel_Booking_Portfolio_Analysis.ipynb](Hotel_Booking_Portfolio_Analysis.ipynb) | Improved, reproducible portfolio edition with generated findings |
 | [hotel_bookings.csv](hotel_bookings.csv) | Hotel bookings dataset |
 | [requirements.txt](requirements.txt) | Python packages needed for typical notebook analyses |
 
@@ -28,8 +29,8 @@ This project explores hotel reservation data to understand booking activity, can
 1. Download or clone the repository.
 2. Install requirements with `python -m pip install -r requirements.txt`.
 3. Start Jupyter with `jupyter notebook`.
-4. Open `Hotel_booking_Analysis_Shan_Singh.ipynb`.
-5. **Update any local Windows-style absolute CSV path** in the notebook to a portable relative path:
+4. Open `Hotel_Booking_Portfolio_Analysis.ipynb` (recommended). The original notebook is also preserved.
+5. The portfolio notebook finds the CSV automatically in its directory or parent. If running the **original** notebook, update its Windows-style absolute CSV path to a relative path:
 
    ```python
    df = pd.read_csv("hotel_bookings.csv")
@@ -49,7 +50,7 @@ This repository contains exploratory analysis, not a deployed predictive model. 
 
 ## Next improvements
 
-- Make CSV loading portable without a manual path edit
+- Verify and save the portfolio notebook's executed outputs
 - Document validated findings from notebook outputs
 - Add a cleaned-up notebook with clear methodology and chart descriptions
 - Add a business recommendations section tied to observed results
