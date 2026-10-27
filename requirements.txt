@@ -3,3 +3,5 @@ pandas
 numpy
 matplotlib
 seaborn
+streamlit>=1.35
+plotly>=5.20
