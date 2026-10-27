@@ -19,6 +19,40 @@ This project explores hotel reservation data to understand booking activity, can
 - Compare reserved and assigned room types
 - Investigate ADR and guest arrival patterns
 
+## Verified findings from the executed notebook
+
+The following values were read from the saved outputs of [Hotel_Booking_Analysis_Executed.ipynb](Hotel_Booking_Analysis_Executed.ipynb). They reflect the notebook's cleaning choices, including excluding bookings with zero recorded guests and dropping exact duplicate rows.
+
+| Metric | Observed result |
+|---|---:|
+| Raw booking records | **119,390** |
+| Original dataset columns | **32** |
+| Zero-guest records excluded | **180** |
+| Exact duplicate records excluded after guest filtering | **31,980** |
+| Records retained for analysis | **87,230** |
+| Mean booking lead time | **79.97 days** |
+| Median booking lead time | **49 days** |
+| Mean average daily rate (ADR) | **106.52** |
+| Median ADR | **98.20** |
+| Largest booking market segment | **Online TA — 51,553 bookings** |
+| Most common recorded guest country among non-cancelled bookings | **PRT — 17,573 bookings** |
+
+### Business interpretation
+
+1. **Booking channel mix:** Online TA accounts for about **59.1%** of the cleaned booking records (51,553 / 87,230). Examine the revenue contribution and cancellation rate of each channel before changing distribution strategy.
+2. **Advance booking behavior:** Median lead time is 49 days, while mean lead time is about 80 days. The difference suggests a right-skewed distribution, which can inform lead-time segmentation for forecasting and cancellation analysis.
+3. **Room-rate variation:** The observed ADR ranges from **-6.38 to 5,400**. These extremes warrant data-quality checks before relying on mean ADR or making pricing recommendations. The notebook does not establish whether extreme values are errors.
+4. **Guest origin concentration:** PRT is the most common recorded origin code among non-cancelled bookings. Investigate whether guest origin patterns differ by hotel type, season, and distribution channel.
+5. **Arrival patterns:** The notebook computes a daily guest-arrival series with a mean of about **157.93** and median of **158** over **793** observed dates. This is a derived guest-count series, not verified occupancy.
+
+### Caveats
+
+- Removing exact duplicate rows is a modeling decision: identical records may represent distinct real bookings.
+- `is_canceled == 0` identifies bookings recorded as not cancelled, not independently verified completed stays.
+- ADR units are those recorded in the dataset; no currency conversion was performed.
+- Descriptive relationships do not establish causation or quantify the financial benefit of proposed actions.
+- The executed notebook preserves tutorial-origin analysis; see attribution below.
+
 ## Files
 
 | File | Description |
@@ -57,6 +91,6 @@ This repository contains exploratory analysis, not a deployed predictive model. 
 ## Next improvements
 
 - Run and save the shorter portfolio-edition notebook's outputs
-- Document validated findings from notebook outputs
+- Validate channel-specific cancellation rates and hotel-level ADR before proposing quantitative interventions
 - Add a cleaned-up notebook with clear methodology and chart descriptions
 - Add a business recommendations section tied to observed results
