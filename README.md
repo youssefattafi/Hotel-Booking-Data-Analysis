@@ -1,6 +1,10 @@
 # Hotel Booking Data Analysis 🏨
 
-Exploratory data analysis of hotel booking records using Python, Pandas, and Jupyter Notebook.
+Exploratory data analysis of **119,390 hotel booking records and 32 fields** using Python, Pandas, and Jupyter Notebook.
+
+### 📊 [View the executed analysis and charts](Hotel_Booking_Analysis_Executed.ipynb)
+
+The executed notebook includes 91 executed code cells and saved analysis outputs. The original tutorial notebook remains available for comparison.
 
 ## Project overview
 
@@ -19,6 +23,8 @@ This project explores hotel reservation data to understand booking activity, can
 
 | File | Description |
 |---|---|
+| **[Hotel_Booking_Analysis_Executed.ipynb](Hotel_Booking_Analysis_Executed.ipynb)** | **Completed notebook with saved outputs and charts — start here** |
+| [Hotel_booking_Analysis_Mac_Fixed.ipynb](Hotel_booking_Analysis_Mac_Fixed.ipynb) | Mac-compatible corrected notebook without executed outputs |
 | [Hotel_booking_Analysis_Shan_Singh.ipynb](Hotel_booking_Analysis_Shan_Singh.ipynb) | Original exploratory analysis notebook (preserved) |
 | [Hotel_Booking_Portfolio_Analysis.ipynb](Hotel_Booking_Portfolio_Analysis.ipynb) | Improved, reproducible portfolio edition with generated findings |
 | [hotel_bookings.csv](hotel_bookings.csv) | Hotel bookings dataset |
@@ -29,7 +35,7 @@ This project explores hotel reservation data to understand booking activity, can
 1. Download or clone the repository.
 2. Install requirements with `python -m pip install -r requirements.txt`.
 3. Start Jupyter with `jupyter notebook`.
-4. Open `Hotel_Booking_Portfolio_Analysis.ipynb` (recommended). The original notebook is also preserved.
+4. Open `Hotel_Booking_Analysis_Executed.ipynb` to view the saved charts or `Hotel_Booking_Portfolio_Analysis.ipynb` for a shorter, structured portfolio edition.
 5. The portfolio notebook finds the CSV automatically in its directory or parent. If running the **original** notebook, update its Windows-style absolute CSV path to a relative path:
 
    ```python
@@ -50,7 +56,7 @@ This repository contains exploratory analysis, not a deployed predictive model. 
 
 ## Next improvements
 
-- Verify and save the portfolio notebook's executed outputs
+- Run and save the shorter portfolio-edition notebook's outputs
 - Document validated findings from notebook outputs
 - Add a cleaned-up notebook with clear methodology and chart descriptions
 - Add a business recommendations section tied to observed results
