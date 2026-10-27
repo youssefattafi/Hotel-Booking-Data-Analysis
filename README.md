@@ -8,6 +8,11 @@ The executed notebook includes 91 executed code cells and saved analysis outputs
 
 ## Interactive Streamlit dashboard
 
+**[🚀 Launch the live Hotel Booking Analytics Dashboard](https://hotel-booking-analytics-ai.streamlit.app/)**
+
+The deployed dashboard provides interactive filters and visualizations. The initial unfiltered view displays **87,230 cleaned bookings**, a **27.5% cancellation rate**, **49-day median lead time**, and **98.20 median ADR** (recorded dataset units).
+
+
 An interactive dashboard is available in [streamlit_app.py](streamlit_app.py), featuring:
 
 - Hotel and arrival-year filters, market segments, and cancellation status
@@ -18,7 +23,7 @@ An interactive dashboard is available in [streamlit_app.py](streamlit_app.py), f
 
 **Run locally:** `streamlit run streamlit_app.py`
 
-**Deploy on Streamlit Community Cloud:** Choose this GitHub repository, branch `main`, and main file path `streamlit_app.py`. The dashboard reads the included `hotel_bookings.csv`. A public deployment URL will be available only after successful deployment.
+**Deploy on Streamlit Community Cloud:** Choose this GitHub repository, branch `main`, and main file path `streamlit_app.py`. The dashboard reads the included `hotel_bookings.csv`. The live deployment is available at [https://hotel-booking-analytics-ai.streamlit.app/](https://hotel-booking-analytics-ai.streamlit.app/).
 
 ## Project overview
 
